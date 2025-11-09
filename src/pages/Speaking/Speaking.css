@@ -1,31 +1,111 @@
 /* Cards*/
 .eventCard{
     height: 100%;
-    width: 400px;
-    border-radius: 5px;
+    width: 380px;
+    border-radius: 15px !important;
     outline-width: 0px !important;
-    padding-bottom: 20px !important;
-    color: darkslategray !important;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    border: 1px solid rgba(102, 126, 234, 0.2) !important;
+    overflow: hidden;
+    transition: all 0.4s ease !important;
+    cursor: pointer;
+    position: relative;
 }
 
-.eventCard :hover{
-    text-decoration: none;
-    color: var(--main-color);
+.eventCard::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.eventCard:hover::after {
+    opacity: 1;
+}
+
+.eventCard:hover{
+    transform: translateY(-15px) scale(1.03) rotate(-1deg);
+    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.5) !important;
+    border: 1px solid rgba(102, 126, 234, 0.7) !important;
 }
 
 .eventCard .eventCard_image{
-    height: 150px;
+    height: 220px;
     max-width: 400px;
+    transition: all 0.4s ease;
+    filter: brightness(0.9);
+}
+
+.eventCard:hover .eventCard_image{
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1);
 }
 
 .eventCard .eventCard_title{
-    font-weight: 500;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    padding: 15px 15px 5px !important;
 }
 
-.eventCard .eventCard_description{
-    
+.eventCard .MuiCardContent-root{
+    background: rgba(26, 26, 46, 0.8);
+    padding: 10px 15px !important;
+}
+
+.eventCard .MuiTypography-body2{
+    color: #b8b8d1 !important;
+    font-size: 14px !important;
+    margin-top: 5px;
 }
 
 .dialogImage{
     width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Dialog Styling */
+.MuiDialog-paper{
+    background: #1a1a2e !important;
+    color: #ffffff !important;
+    border-radius: 15px !important;
+    border: 1px solid rgba(102, 126, 234, 0.3) !important;
+}
+
+.MuiDialogTitle-root{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.MuiDialogContent-root{
+    padding: 20px !important;
+}
+
+.MuiDialogContent-root .MuiTypography-root{
+    color: #b8b8d1 !important;
+    line-height: 1.7 !important;
+}
+
+.MuiDialogActions-root a{
+    color: #667eea !important;
+    transition: all 0.3s ease;
+    padding: 8px;
+}
+
+.MuiDialogActions-root a:hover{
+    color: #764ba2 !important;
+    transform: scale(1.2);
+}
+
+.MuiDialogActions-root svg{
+    font-size: 28px;
 }

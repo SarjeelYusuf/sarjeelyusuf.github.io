@@ -1,66 +1,132 @@
 /* Tabs*/
+.customTabs{
+    margin-bottom: 30px !important;
+}
+
 .customTabs .active{
-    color: var(--main-color) !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .customTabs .customTabs_item{
-    padding: 0px !important;
+    padding: 8px 16px !important;
     min-width: 0px !important;
-    margin-right: 20px !important;
+    margin-right: 15px !important;
     text-transform: inherit;
-    font-size: 14px !important;
-    font-weight: 400 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
     outline-width: 0px !important;
-    color: darkslategray !important;
+    color: #b8b8d1 !important;
+    transition: all 0.3s ease !important;
+}
+
+.customTabs .customTabs_item:hover{
+    color: #ffffff !important;
+}
+
+.customTabs .MuiTabs-indicator{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    height: 3px !important;
 }
 
 /* Cards*/
 .customCard{
     height: 100%;
-    width: 200px;
-    border-radius: 5px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px !important;
     outline-width: 0px !important;
-    padding-bottom: 20px !important;
-    color: darkslategray !important;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    border: 1px solid rgba(102, 126, 234, 0.2) !important;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    position: relative;
+}
+
+.customCard::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+    background-size: 400%;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    animation: gradientShift 3s ease infinite;
+}
+
+.customCard:hover::before {
+    opacity: 0.7;
+}
+
+.customCard:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(102, 126, 234, 0.5) !important;
+    border: 1px solid rgba(102, 126, 234, 0.7) !important;
 }
 
 .customCard > a:link{
     text-decoration: none;
-    color: darkslategray;
-    background:linear-gradient(transparent 220px, rgb(221, 221, 221));
+    color: #ffffff;
 }
 
 .customCard > a:hover{
     text-decoration: none;
-    color: var(--main-color);
 }
 
 .customCard .customCard_image{
-    height: 120px;
-    max-width: 300px;
+    height: 200px;
+    width: 100%;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: brightness(0.85);
+}
+
+.customCard:hover .customCard_image{
+    transform: scale(1.15) rotate(-2deg);
+    filter: brightness(1.1);
 }
 
 .customCard .customCard_title{
-    font-weight: 500;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    font-size: 15px !important;
+    padding: 15px !important;
+    line-height: 1.4 !important;
 }
 
-.customCard .customCard_description{
-    
-}
-
-
+/* Publications */
 .publication_image{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 120px;
+    max-height: 120px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.publication_image:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
 .publication_image_container{
-    
     text-align: center !important;
+    padding: 20px;
 }
 
-.publication_container > a:hover{
-    box-shadow: 10px 10px 5px #000000 !important;
-    -moz-box-shadow: 0px 10px 5px #000000 !important;
-  -webkit-box-shadow: 0px 10px 5px #000000 !important; 
+.publication_container{
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.publication_container:hover{
+    background: rgba(102, 126, 234, 0.2);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }

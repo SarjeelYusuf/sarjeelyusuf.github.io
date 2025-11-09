@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Chip } from '@material-ui/core';
 import CustomTimeline, {CustomTimelineSeperator} from "../../components/Timeline/CustomTimeline";
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
@@ -22,7 +22,7 @@ const Resume = () => {
                     <h6 className='section_title_text'>About</h6>
                 </Grid>
 
-                <Typography  variant='subtitle1' className='timeline_description'>
+                <Typography  variant='subtitle1' className='timeline_description' style={{fontSize: '16px', lineHeight: 1.8}}>
                 <b>An engineer turned product manager at Datadog and AWS community builder.</b> Using a data-driven approach to develop next-gen solutions and product growth along with constantly striving for intuitive UI/UX experience.
                 Can be found talking about technology and philosophy while laughing at the comedies of life.
                 </Typography>
@@ -124,6 +124,72 @@ const Resume = () => {
                     </Grid>
                 </Grid>
 
+            </Grid>
+
+            {/* Skills Section */}
+            <Grid container className='section pb_45 pt_45 skills_section'>
+                <Grid item className='section_title mb_30'>
+                    <span></span>
+                    <h6 className='section_title_text'>Skills & Expertise</h6>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Grid container spacing={4}>
+                        {/* Product Management Skills */}
+                        <Grid item xs={12} md={4}>
+                            <div className='skill_category'>
+                                <Typography className='skill_category_title'>
+                                    Product Management
+                                </Typography>
+                                <div className='skill_chips'>
+                                    {resumeData.skills.productManagement.map((skill, index) => (
+                                        <Chip 
+                                            key={index}
+                                            label={skill} 
+                                            className='skill_chip'
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </Grid>
+
+                        {/* Technical Skills */}
+                        <Grid item xs={12} md={4}>
+                            <div className='skill_category'>
+                                <Typography className='skill_category_title'>
+                                    Technical Skills
+                                </Typography>
+                                <div className='skill_chips'>
+                                    {resumeData.skills.technical.map((skill, index) => (
+                                        <Chip 
+                                            key={index}
+                                            label={skill} 
+                                            className='skill_chip'
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </Grid>
+
+                        {/* DevOps Skills */}
+                        <Grid item xs={12} md={4}>
+                            <div className='skill_category'>
+                                <Typography className='skill_category_title'>
+                                    DevOps & SRE
+                                </Typography>
+                                <div className='skill_chips'>
+                                    {resumeData.skills.devops.map((skill, index) => (
+                                        <Chip 
+                                            key={index}
+                                            label={skill} 
+                                            className='skill_chip'
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
 
         </>

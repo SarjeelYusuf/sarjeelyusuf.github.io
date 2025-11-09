@@ -1,29 +1,58 @@
 .custom_btn{
-    background-color: var(--main-color) !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%) !important;
+    background-size: 200% auto !important;
     font-size: 14px !important;
-    font-weight: 500px !important;
+    font-weight: 600 !important;
     border: 0px !important;
     border-radius: 50px !important;
-    padding: 1px, 12px !important;
+    padding: 8px 20px !important;
     line-height: 35px !important;
-    min-width: 100px !important;
+    min-width: 140px !important;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4) !important;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom_btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.custom_btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.custom_btn:hover{
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.8) !important;
+    transform: translateY(-4px) scale(1.05) !important;
+    animation: pulse 1s ease-in-out infinite;
 }
 
 .custom_btn .btn_icon_container{
-    color: #000 !important;
+    color: #667eea !important;
     background-color: #fff !important;
     border-radius: 50px !important;
-    height: 30px !important;
-    width: 30px !important;
-    line-height: 29px !important;
+    height: 32px !important;
+    width: 32px !important;
+    line-height: 32px !important;
     text-align: center !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    
 }
+
 .custom_btn .btn_icon_container > .MuiSvgIcon-root{
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 
 .custom_btn .btn_text{
@@ -33,5 +62,6 @@
     width: 100px;
     margin-right: 5px;
     margin-left: 5px;
-    font-weight: bold;
+    font-weight: 600;
+    color: #fff;
 }

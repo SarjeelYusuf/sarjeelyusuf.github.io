@@ -84,13 +84,14 @@ const Portfolio = () => {
 
             {/*Blogs*/}
             <Grid item xs={12}>
-                <Grid container spacing={2}>
-                    {blogRegistry.blogs.map(blog =>(
+                <Grid container spacing={3} justify="center">
+                    {blogRegistry.blogs.map((blog, index) =>(
                         <>
-                        {tabValue == blog.tag || tabValue == 'All' ? (                        <Grid item>
-                            <Grow in timeout={1000}>
+                        {tabValue == blog.tag || tabValue == 'All' ? (
+                        <Grid item xs={12} sm={6} md={6} lg={4}>
+                            <Grow in timeout={1000 + (index * 100)}>
                                 <Card className='customCard'>
-                                    <a href={blog.link} target="_blank">
+                                    <a href={blog.link} target="_blank" rel="noreferrer">
                                         <CardActionArea>
                                             <CardMedia className = 'customCard_image' image={blog.image} title={blog.title}/>
                                             <CardContent>
@@ -100,7 +101,7 @@ const Portfolio = () => {
                                     </a>
                                 </Card>
                             </Grow>
-                        </Grid>  ) : null}
+                        </Grid>) : null}
                         </>
                     ))}
                 </Grid>

@@ -24,9 +24,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/ActiveActive%20Multi-Region%20Systems%20on%20Steroids%20With%20Serverless.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Active/Active Multi-Region Systems on Steroids With Serverless",
-            link: "https://blog.thundra.io/active/active-multi-region-systems-on-steroids-with-serverless"
+            link: "https://medium.com/@yusuf_82810/active-active-multi-region-systems-on-steroids-with-serverless-c3408788102f"
         },
 
         {
@@ -38,16 +38,16 @@ export default{
 
         {
             tag: "DevOps",
-            image: "https://blog.thundra.io/hubfs/Ebbs%20and%20Flows%20Of%20DevOps%20Debugging%20PART%202.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Ebbs and Flows Of DevOps Debugging PART 2",
-            link: "https://blog.thundra.io/ebbs-and-flows-of-devops-debugging-part-2"
+            link: "https://medium.com/@yusuf_82810/ebbs-and-flows-of-devops-debugging-part-2-4fb7bb094364"
         },
 
         {
             tag: "DevOps",
-            image: "https://blog.thundra.io/hubfs/Ebbs%20and%20Flows%20Of%20DevOps%20Debugging%20PART%20111.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Ebbs and Flows Of DevOps Debugging PART 1",
-            link: "https://blog.thundra.io/ebbs-and-flows-of-devops-debugging-part-1"
+            link: "https://medium.com/@yusuf_82810/ebbs-and-flows-of-devops-debugging-part-i-b6acecc2ee4d"
         },
 
         {
@@ -80,9 +80,9 @@ export default{
 
         {
             tag: "DevOps",
-            image: "https://blog.thundra.io/hubfs/Blog-Featured-Image%28StrengtheningObservabilityWithDashboardasCode%29.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Strengthening Observability With Dashboard as Code",
-            link: "https://blog.thundra.io/strengthening-observability-with-dashboard-as-code"
+            link: "https://medium.com/@yusuf_82810/strengthening-observability-with-dashboard-as-code-a40d14ee31e5"
         },
 
         {
@@ -117,7 +117,7 @@ export default{
             tag: "Cloud Computing",
             image: "https://miro.medium.com/max/1000/1*eDfkZLSUz27AaEwF1LSL4g.png",
             title: "Expanding the Serverless War Chest With AWS EFS",
-            link: "https://blog.thundra.io/expanding-the-serverless-war-chest-with-aws-efs"
+            link: "https://medium.com/thundra/expanding-the-serverless-war-chest-with-aws-efs-dea3b003ee8d"
         },
 
         {
@@ -136,9 +136,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/2.1.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "The Comforts of GraphQL with AWS AppSync",
-            link: "https://blog.thundra.io/the-comforts-of-graphql-with-aws-appsync"
+            link: "https://medium.com/@yusuf_82810/the-comforts-of-graphql-with-aws-appsync-d8b36b9c67"
         },
 
         {
@@ -157,9 +157,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/blog-images/lambda%20destinations/lambda-destinations.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "A Step Towards Observability with Lambda Destinations",
-            link: "https://blog.thundra.io/a-step-towards-observability-with-lambda-destinations"
+            link: "https://medium.com/@yusuf_82810/a-step-towards-observability-with-lambda-destinations-110e2caf0605"
         },
 
         {
@@ -178,9 +178,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/blog-images/%5BBlogBuilding%20Serverless%20IoT%20Systems%20from%20Node-RED%20to%20AWS%20Lambda%5D/%C4%B1ot-nodered-to-aws-lambda.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Building Serverless IoT Systems from Node-RED to AWS Lambda",
-            link: "https://blog.thundra.io/building-serverless-iot-systems-from-node-red-to-aws-lambda"
+            link: "https://medium.com/@yusuf_82810/building-serverless-iot-systems-from-node-red-to-aws-lambda-ebe991c64d22"
         },
 
         {
@@ -227,9 +227,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/blog-images/Making%20AppSync%20Easier%20with%20Thundra/making-appsync-easier-with-thundra.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Making AppSync Easier with Thundra",
-            link: "https://blog.thundra.io/making-appsync-easier-with-thundra"
+            link: "https://medium.com/@yusuf_82810/making-appsync-easier-with-thundra-6570994cda5b"
         },
 
         {
@@ -255,9 +255,9 @@ export default{
 
         {
             tag: "Cloud Computing",
-            image: "https://blog.thundra.io/hubfs/detailed-serverless-monitoring-blog.png",
+            image: "https://miro.medium.com/max/1400/1*-5_NqMqzqzqzqzqzqzqzqQ.png",
             title: "Detailed Serverless Monitoring Using a Completely Automated Approach",
-            link: "https://blog.thundra.io/detailed-serverless-monitoring-using-a-completely-automated-approach"
+            link: "https://medium.com/@yusuf_82810/detailed-serverless-monitoring-using-a-completely-automated-approach-c148fa8cfa47"
         },
 
     ],

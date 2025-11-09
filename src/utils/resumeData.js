@@ -14,7 +14,6 @@ import datadog from '../assets/images/datadog_badge.png';
 import awscomm from '../assets/images/aws_comm_badge.png';
 import tns from '../assets/images/thenewstack.png';
 import devops from '../assets/images/devops.png';
-import thundra from '../assets/images/thundrablog.png';
 import atlascomm from '../assets/images/atlascom.png';
 import defaultAtlassianImage from '../assets/images/atlassian-community-opengraph.png';
 import DD_DC from '../assets/images/speaking/5_Serverless_Powerups_for_your_DevOps_Infrastructure_in_5_minutes_DevOps_Days_DC.png';
@@ -47,7 +46,7 @@ export default{
             icon: <IoLogoLinkedin/>
         },
         github:{
-            link: 'https://github.com/AmateurIndian',
+            link: 'https://github.com/SarjeelYusuf',
             icon: <IoLogoGithub/>
         },
         twitter:{
@@ -130,6 +129,38 @@ export default{
         },
     },
 
+    skills: {
+        productManagement: [
+            'Product Strategy',
+            'Roadmap Planning',
+            'User Research',
+            'A/B Testing',
+            'Data Analytics',
+            'Agile/Scrum',
+            'Stakeholder Management',
+            'AAARRR Framework'
+        ],
+        technical: [
+            'AWS (Lambda, EC2, S3, CloudWatch)',
+            'Serverless Architecture',
+            'GraphQL & REST APIs',
+            'Docker & Kubernetes',
+            'CI/CD Pipelines',
+            'React.js',
+            '.NET Core',
+            'Python & Node.js'
+        ],
+        devops: [
+            'Workflow Automation',
+            'Infrastructure as Code',
+            'Monitoring & Observability',
+            'Incident Management',
+            'SRE Practices',
+            'Datadog APM/RUM',
+            'Jenkins/GitHub Actions'
+        ]
+    },
+
     certification:{
 
         awscomm:{
@@ -189,10 +220,10 @@ export default{
             link: 'https://devops.com/author/sarjeel-yusuf/',
             image: devops
         },
-        thundrablog:{
-            publisher: 'Thundra Blogs',
-            link: 'https://blog.thundra.io/author/sarjeel-yusuf',
-            image: thundra
+        datadogmonitor:{
+            publisher: 'The Monitor (Datadog)',
+            link: 'https://www.datadoghq.com/blog/',
+            image: datadog
         },
         atlascommunity:{
             publisher: 'Atlassian Community',
