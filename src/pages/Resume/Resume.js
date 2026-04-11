@@ -23,7 +23,7 @@ const Resume = () => {
                 </Grid>
 
                 <Typography  variant='subtitle1' className='timeline_description' style={{fontSize: '16px', lineHeight: 1.8}}>
-                <b>An engineer turned product manager at Datadog and AWS community builder.</b> Using a data-driven approach to develop next-gen solutions and product growth along with constantly striving for intuitive UI/UX experience.
+                <b>An engineer turned senior product manager at Datadog and AWS community builder.</b> Using a data-driven approach to develop next-gen solutions and product growth along with constantly striving for intuitive UI/UX experience.
                 Can be found talking about technology and philosophy while laughing at the comedies of life.
                 </Typography>
             </Grid>

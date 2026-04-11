@@ -33,8 +33,8 @@ import Automation_Best_Practices_SREDay_London_2023 from '../assets/images/speak
 
 export default{
     name: 'Sarjeel Yusuf',
-    title: 'Engineer Turned Product Manager',
-    job_role: 'Product Manager',
+    title: 'Engineer Turned Senior Product Manager',
+    job_role: 'Senior Product Manager',
     company: 'Datadog',
     email: 'sarj93@gmail.com',
     phone: '+905514426217',
@@ -63,9 +63,9 @@ export default{
         ddog:{
             company: 'Datadog',
             date: 'November 2021 - Present',
-            job: 'Product Manager',
+            job: 'Senior Product Manager',
             description: [
-              "Drove a 10% increase in APM trial adoption by enabling all trial customers to activate APM and RUM with a single agent install.",
+              "Drove a ~35% increase in APM trial adoption by enabling all trial customers to activate APM and RUM with a single agent install.",
               "Accelerated onboarding, resulting in 45% of trial users adopting Datadog APM via new auto-instrumentation for SDKs.",
               "Launched and owned Datadog Workflow Automation, achieving 25% month-over-month adoption from concept to release in 2023.",
               "Delivered AI-powered workflow building and editing, with 60% of users leveraging these features for remediation workflows."
