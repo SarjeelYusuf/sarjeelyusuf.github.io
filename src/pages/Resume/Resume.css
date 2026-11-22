@@ -49,6 +49,20 @@
     margin-top: 5px;
 }
 
+.resume_timeline .timeline_role{
+    margin-top: 14px;
+}
+
+.resume_timeline .timeline_role_title{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+.resume_timeline .timeline_role .timeline_description{
+    margin-top: 6px;
+}
+
 .resume_timeline .timeline_description{
     color: #b8b8d1 !important;
     font-size: 15px;

@@ -52,6 +52,20 @@ const Resume = () => {
                                         <TimelineContent>
                                             <Typography className='timeline_title'>{resumeData.work[experiance].job } - {resumeData.work[experiance].company}</Typography>
                                             <Typography className='timeline_date'>{resumeData.work[experiance].date}</Typography>
+                                            {resumeData.work[experiance].roles ? (
+                                                resumeData.work[experiance].roles.map((role, roleIdx) => (
+                                                    <div key={roleIdx} className='timeline_role'>
+                                                        <Typography className='timeline_role_title'>{role.title}</Typography>
+                                                        <Typography variant='body2' component='div' className='timeline_description'>
+                                                            <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
+                                                                {role.description.map((item, idx) => (
+                                                                    <li key={idx} style={{ marginBottom: '0.5em' }}>{item}</li>
+                                                                ))}
+                                                            </ul>
+                                                        </Typography>
+                                                    </div>
+                                                ))
+                                            ) : (
                                             <Typography  variant='body2' className='timeline_description'>
   {Array.isArray(resumeData.work[experiance].description) ? (
     <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
@@ -63,6 +77,7 @@ const Resume = () => {
     resumeData.work[experiance].description
   )}
 </Typography>
+                                            )}
                                         </TimelineContent>
                                     </TimelineItem>
 

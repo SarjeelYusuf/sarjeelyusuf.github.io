@@ -64,11 +64,29 @@ export default{
             company: 'Datadog',
             date: 'November 2021 - Present',
             job: 'Senior Product Manager',
-            description: [
-              "Drove a ~35% increase in APM trial adoption by enabling all trial customers to activate APM and RUM with a single agent install.",
-              "Accelerated onboarding, resulting in 45% of trial users adopting Datadog APM via new auto-instrumentation for SDKs.",
-              "Launched and owned Datadog Workflow Automation, achieving 25% month-over-month adoption from concept to release in 2023.",
-              "Delivered AI-powered workflow building and editing, with 60% of users leveraging these features for remediation workflows."
+            roles: [
+              {
+                title: 'Leading Datadog BYOC',
+                description: [
+                  "Leading Datadog BYOC, a deployment model that brings Datadog's three-pillar observability (metrics, traces, and logs) into the customer's own environment.",
+                  "Built for customers who need data residency and economies of scale from their observability solution.",
+                  "Committed to delivering a query engine 2x better than the next best alternative while being 50% more cost efficient."
+                ],
+              },
+              {
+                title: 'Leading APM Onboarding',
+                description: [
+                  "Drove a ~35% increase in APM trial adoption by enabling all trial customers to activate APM and RUM with a single agent install.",
+                  "Accelerated onboarding, resulting in 45% of trial users adopting Datadog APM via new auto-instrumentation for SDKs."
+                ],
+              },
+              {
+                title: 'Leading Workflow Automation',
+                description: [
+                  "Launched and owned Datadog Workflow Automation, achieving 25% month-over-month adoption from concept to release in 2023.",
+                  "Delivered AI-powered workflow building and editing, with 60% of users leveraging these features for remediation workflows."
+                ],
+              }
             ],
         },
         atlassian:{
