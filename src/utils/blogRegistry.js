@@ -4,6 +4,24 @@ export default{
 
     blogs: [
         {
+            tag: "Cloud Computing",
+            image: "https://web-assets.dd-static.net/42588/1791562053-byoc-cross-cluster-queries-hero.png",
+            title: "Unify data across Datadog BYOC with cross-cluster queries for teams and AI agents",
+            link: "https://www.datadoghq.com/blog/byoc-cross-cluster-queries/"
+        },
+        {
+            tag: "DevOps",
+            image: "https://web-assets.dd-static.net/42588/1776358867-single-step-instrumentation-rules-single-step-instrumentation-rules-hero.png",
+            title: "Manage service tracing across hosts with Single Step Instrumentation rules",
+            link: "https://www.datadoghq.com/blog/single-step-instrumentation-rules/"
+        },
+        {
+            tag: "DevOps",
+            image: "https://web-assets.dd-static.net/42588/1776304303-rum-apm-single-step-rum-apm-single-step-hero.png",
+            title: "Enable end-to-end visibility into your Java apps with a single command",
+            link: "https://www.datadoghq.com/blog/rum-apm-single-step/"
+        },
+        {
             tag: "DevOps",
             image: "https://imgix.datadoghq.com/img/blog/single-step-instrumentation/single-step-hero.png?auto=compress%2Cformat&cs=origin&lossless=true&fit=max&q=75&w=1400&dpr=2",
             title: "Achieve total app visibility in minutes with Single Step Instrumentation",
